@@ -10,5 +10,13 @@ def index():
 def interactive_map():
     return render_template("interactive-map.jinja")
 
+@app.route("/environmental-research/nybg-internship", methods=["GET"])
+def nybg_internship():
+    return render_template("nybg-internship.jinja")
+
+@app.route("/service-volunteering/girlup-club", methods=["GET"])
+def girlup_club():
+    return render_template("girlup-club.jinja")
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000, debug=True)
